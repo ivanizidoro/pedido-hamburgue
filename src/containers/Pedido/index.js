@@ -12,9 +12,11 @@ function Oders() {
     const [orders, setOrders] = useState([])
     const navigate = useNavigate()
 
+    const minhaUrl = "https://hamburgueria-xi-wine.vercel.app"
+
     useEffect(() => {
         async function fetchOrders() {
-            const { data: newOrders } = await Axios.get("http://localhost:3001/order")
+            const { data: newOrders } = await Axios.get(`${minhaUrl}/order`)
 
             setOrders(newOrders)
         }

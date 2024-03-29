@@ -13,8 +13,10 @@ function App() {
     const inputPedido = useRef()
     const inputName = useRef()
 
+    const minhaUrl = "https://hamburgueria-xi-wine.vercel.app"
+
     async function addNewOrder() {
-        const { data: newOrder } = await Axios.post("http://localhost:3001/order", {
+        const { data: newOrder } = await Axios.post(`${minhaUrl}/order`, {
             pedido: inputPedido.current.value,
             name: inputName.current.value
         })

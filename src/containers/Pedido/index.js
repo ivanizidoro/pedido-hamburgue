@@ -45,7 +45,7 @@ function Oders() {
                     {orders.map(order => (
                         <Requests key={order.id}>
                             <P><p className="pedido">{order.pedido}</p><p className="nome">{order.name}</p></P>
-                            <button onClick={() => deletePedido(order.id)}><img src={Trash} alt="lata-de-lixo" className="lixeira"/></button>
+                            <button onClick={() => deletePedido(order.id)}><img src={Trash} alt="lata-de-lixo" /></button>
                         </Requests>
                     ))}
                 </ul>

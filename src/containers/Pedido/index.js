@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Pedidos from "../../assets/Pedido.png"
-import { Container, Image, H1, ContianerItens, Button, Requests } from "./styles"
+import { Container, Image, H1, ContianerItens, Button, Requests, P } from "./styles"
 import Trash from "../../assets/trash.svg"
 import { useNavigate } from "react-router-dom";
 import Axios from "axios";
@@ -31,7 +31,7 @@ function Oders() {
         setOrders(newOrders)
     }
 
-    function goBackPage(){
+    function goBackPage() {
         navigate("/")
     }
 
@@ -44,8 +44,8 @@ function Oders() {
                 <ul>
                     {orders.map(order => (
                         <Requests key={order.id}>
-                            <p>{order.pedido}</p>  <p>{order.name}</p>
-                            <button onClick={() => deletePedido(order.id)}><img src={Trash} alt="lata-de-lixo" /></button>
+                            <P><p className="pedido">{order.pedido}</p><p className="nome">{order.name}</p></P>
+                            <button onClick={() => deletePedido(order.id)}><img src={Trash} alt="lata-de-lixo" className="lixeira"/></button>
                         </Requests>
                     ))}
                 </ul>

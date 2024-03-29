@@ -24,21 +24,37 @@ export const Image = styled.img`
 export const Requests = styled.li`
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    padding: 30px;
 
     background: rgba(255,255,255, 0.25);
     box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
     border-radius: 14px;
 
     width: 342px;
-    height: 58px;
+    height: 101px;
 
     border: none;
-    outline: none;
+    
+
+    .pedido{
+        color: #FFFFFF;
+        gap: 15px;
+        font-weight: 100;
+        font-size: 19px;
+
+    }
+
+    .nome{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 25px;
+    }
 
 `
+export const P = styled.h1``
 
 export const ContianerItens = styled.div`
 
@@ -106,7 +122,6 @@ export const Button = styled.button`
     margin-top: 50px;
 
     cursor: pointer;
-
 
     &:hover{
         opacity: 0.8;

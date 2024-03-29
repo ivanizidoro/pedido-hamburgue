@@ -7,6 +7,8 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "Fira Code", monospace;
+        text-decoration: none;
+
     }
 
 `

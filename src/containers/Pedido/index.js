@@ -26,7 +26,7 @@ function Oders() {
     }, [])
 
     async function deletePedido(orderId) {
-        await Axios.delete(`http://localhost:3001/order/${orderId}`)
+        await Axios.delete(`${minhaUrl}/order/${orderId}`)
 
         const newOrders = orders.filter(order => order.id !== orderId)
 

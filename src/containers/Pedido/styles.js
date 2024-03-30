@@ -110,7 +110,7 @@ export const Input = styled.input`
 
 export const Button = styled.button`
 
-    background: #0A0A10;
+    background: #A8A8A8;
     color: #ffffff;
     height: 68px;
 
@@ -120,7 +120,7 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 17px;
     line-height: 28px;
-    margin-top: 50px;
+    margin-top: 15px;
 
     cursor: pointer;
 

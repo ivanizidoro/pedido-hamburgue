@@ -8,7 +8,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 
 
     height: 100vh;
@@ -85,7 +85,7 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 17px;
     line-height: 28px;
-    margin-top: 50px;
+    margin-top: 20px;
 
     cursor: pointer;
 

@@ -27,6 +27,10 @@ function App() {
 
     }
 
+    function listOrder(){
+        navigate("/pedido")
+    }
+
     return (
         <Container>
             <Image alt="logo-home" src={Home} />
@@ -40,6 +44,8 @@ function App() {
                 <Input ref={inputName} placeholder="Nome do Cliente" />
 
                 <Button onClick={addNewOrder}>Novo Pedido</Button>
+
+                <li onClick={listOrder}>Pedidos</li>
             </ContianerItens>
         </Container>
     )

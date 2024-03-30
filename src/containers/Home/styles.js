@@ -27,6 +27,22 @@ export const ContianerItens = styled.div`
     display: flex;
     flex-direction: column;
 
+    li{
+        display: flex;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-weight: 700;
+        list-style: none;
+        background: rgba(255,255,255, 0.25);
+
+        cursor: pointer;
+
+        height: 30px;
+        border-radius: 50%;
+    }
+
 `
 
 export const H1 = styled.h1`

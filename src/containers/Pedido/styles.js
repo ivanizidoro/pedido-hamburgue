@@ -27,6 +27,7 @@ export const Requests = styled.li`
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    margin-top: 30px;
 
     background: rgba(255,255,255, 0.25);
     box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
